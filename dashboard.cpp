@@ -27,3 +27,11 @@ int pendingTasks(const DashboardStats& stats) {
 
     return stats.totalTasks - stats.completedTasks;
 }
+
+bool isTaskCompleted(int completedTasks, int totalTasks) {
+    if (totalTasks <= 0 || completedTasks < 0) {
+        return false;
+    }
+
+    return completedTasks == totalTasks;
+}
