@@ -12,3 +12,11 @@ bool isValidLanguage(const string& language) {
            language == "hi" ||
            language == "gu";
 }
+
+void setNotifications(UserSettings& settings, bool enabled) {
+    settings.notificationsEnabled = enabled;
+}
+
+bool shouldSendNotification(const UserSettings& settings) {
+    return settings.notificationsEnabled;
+}
