@@ -22,3 +22,20 @@ bool isValidEmail(const string& email) {
            dot > at + 1 &&
            dot < email.length() - 1;
 }
+
+bool isValidUsername(const string& username) {
+    if (username.length() < 3 || username.length() > 20) {
+        return false;
+    }
+
+    for (char ch : username) {
+        if (!((ch >= 'a' && ch <= 'z') ||
+              (ch >= 'A' && ch <= 'Z') ||
+              (ch >= '0' && ch <= '9') ||
+              ch == '_')) {
+            return false;
+        }
+    }
+
+    return true;
+}
