@@ -35,3 +35,17 @@ bool isTaskCompleted(int completedTasks, int totalTasks) {
 
     return completedTasks == totalTasks;
 }
+
+string progressLevel(const DashboardStats& stats) {
+    double rate = completionRate(stats);
+
+    if (rate >= 80.0) {
+        return "Excellent";
+    }
+
+    if (rate >= 50.0) {
+        return "On Track";
+    }
+
+    return "Needs Attention";
+}
