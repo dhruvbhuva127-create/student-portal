@@ -49,3 +49,4 @@ string progressLevel(const DashboardStats& stats) {
 
     return "Needs Attention";
 }
+Conflict resolution strategy: keep latest user settings.
