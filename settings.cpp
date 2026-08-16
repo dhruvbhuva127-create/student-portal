@@ -28,3 +28,12 @@ void setDarkMode(UserSettings& settings, bool enabled) {
 string themeName(const UserSettings& settings) {
     return settings.darkMode ? "dark" : "light";
 }
+
+bool updateLanguage(UserSettings& settings, const string& language) {
+    if (!isValidLanguage(language)) {
+        return false;
+    }
+
+    settings.language = language;
+    return true;
+}
