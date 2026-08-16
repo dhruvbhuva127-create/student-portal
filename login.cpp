@@ -27,3 +27,8 @@ bool isValidPassword(const string& password) {
 
     return hasDigit;
 }
+
+bool canAttemptLogin(int attempts) {
+    const int maxAttempts = 3;
+    return attempts >= 0 && attempts < maxAttempts;
+}
