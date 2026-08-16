@@ -15,3 +15,9 @@ g++ main.cpp -o student-portal
 Run the program:
 
 ./student-portal
+
+## Project Structure
+
+- `main.cpp` - Main C++ source code
+- `.gitignore` - Files ignored by Git
+- `README.md` - Project documentation
