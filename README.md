@@ -34,4 +34,4 @@ The calculator supports:
 - Division
 ## Author
 
-Dhruv Bhuva
+Dhruv BhuvaRun the project using the required Git workflow before development.
