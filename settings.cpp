@@ -20,3 +20,11 @@ void setNotifications(UserSettings& settings, bool enabled) {
 bool shouldSendNotification(const UserSettings& settings) {
     return settings.notificationsEnabled;
 }
+
+void setDarkMode(UserSettings& settings, bool enabled) {
+    settings.darkMode = enabled;
+}
+
+string themeName(const UserSettings& settings) {
+    return settings.darkMode ? "dark" : "light";
+}
