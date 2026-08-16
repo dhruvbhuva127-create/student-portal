@@ -39,3 +39,19 @@ bool isValidUsername(const string& username) {
 
     return true;
 }
+
+bool isValidBio(const string& bio) {
+    const size_t maxBioLength = 160;
+
+    if (bio.length() > maxBioLength) {
+        return false;
+    }
+
+    for (char ch : bio) {
+        if (ch == '\n' || ch == '\r') {
+            return false;
+        }
+    }
+
+    return true;
+}
