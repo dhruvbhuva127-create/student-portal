@@ -16,10 +16,47 @@ int addNumbers(int a, int b) {
 bool loginUser(const std::string& username, const std::string& password) {
     return username == "admin" && password == "1234";
 }
+void calculator() {
+    int a, b;
+    char op;
 
+    std::cout << "Enter first number: ";
+    std::cin >> a;
+
+    std::cout << "Enter operator (+, -, *, /): ";
+    std::cin >> op;
+
+    std::cout << "Enter second number: ";
+    std::cin >> b;
+
+    switch(op) {
+        case '+':
+            std::cout << "Result: " << a + b << std::endl;
+            break;
+
+        case '-':
+            std::cout << "Result: " << a - b << std::endl;
+            break;
+
+        case '*':
+            std::cout << "Result: " << a * b << std::endl;
+            break;
+
+        case '/':
+            if(b == 0)
+                std::cout << "Cannot divide by zero." << std::endl;
+            else
+                std::cout << "Result: " << (double)a / b << std::endl;
+            break;
+
+        default:
+            std::cout << "Invalid operator." << std::endl;
+    }
+}
 int main() {
     printWelcomeMessage();
     greetUser();
+    calculator();
 
     int num1 = 5;
     int num2 = 10;
