@@ -32,3 +32,6 @@ The calculator supports:
 - Subtraction
 - Multiplication
 - Division
+## Author
+
+Dhruv Bhuva
