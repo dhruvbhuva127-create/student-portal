@@ -21,3 +21,14 @@ Run the program:
 - `main.cpp` - Main C++ source code
 - `.gitignore` - Files ignored by Git
 - `README.md` - Project documentation
+## Functionality
+
+### Login
+The program validates the username and password entered by the user.
+
+### Calculator
+The calculator supports:
+- Addition
+- Subtraction
+- Multiplication
+- Division
